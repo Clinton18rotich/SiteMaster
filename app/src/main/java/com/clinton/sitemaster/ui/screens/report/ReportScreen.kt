@@ -1,0 +1,21 @@
+package com.clinton.sitemaster.ui.screens.report
+
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
+
+@Composable
+fun ReportScreen(navController: NavController) {
+    Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
+        Text("Report", style = MaterialTheme.typography.headlineMedium)
+        Spacer(Modifier.height(16.dp))
+        Text("Coming soon - full implementation in next phase")
+        Spacer(Modifier.height(16.dp))
+        Button(onClick = { navController.popBackStack() }) {
+            Text("Back")
+        }
+    }
+}
